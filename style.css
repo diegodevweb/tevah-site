@@ -1404,7 +1404,7 @@ footer span a:hover {
 
 @media (max-width: 452px) {
   section {
-    margin: -80px 0 30px 0;
+    margin: -80px 0 0 0;
   }
 
   .navbar .max-width .menu-btn {
@@ -1499,7 +1499,7 @@ footer span a:hover {
 
   .content-max-width .title {
     padding: 0 80px;
-    margin-top: -5%;
+    margin-top: -20%;
     margin-left: 20%;
   }
 
