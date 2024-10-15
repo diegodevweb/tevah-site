@@ -1403,6 +1403,10 @@ footer span a:hover {
 }
 
 @media (max-width: 452px) {
+  section {
+    margin: -80px 0 30px 0;
+  }
+
   .navbar .max-width .menu-btn {
     margin-right: 5%;
   }
