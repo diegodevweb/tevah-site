@@ -11,6 +11,11 @@ html {
   scroll-behavior: smooth;
 }
 
+body.dark-mode {
+  background-color: #fff;
+  color: #ffffff; 
+}
+
 .content-max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -366,7 +371,6 @@ h1 {
 .card.highlight {
   filter: brightness(1)
 }
-
 
 .card:nth-of-type(1) .image-container {
     background-image: url(/img/dashboard.png);
@@ -760,6 +764,70 @@ footer {
 footer span a:hover {
   text-decoration: underline;
   color: #689fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #fff;
+  }
+
+  .home {
+    background: url(/img/foto02-dark.jpg) no-repeat; /* Imagem para o modo escuro */
+    background-size: cover;
+    color: #ffffff; /* Cor do texto no modo escuro */
+  }
+
+  #container {
+    background-image: initial;
+    background-color:#fff;
+  }
+
+  #container .card:nth-of-type(3) .image-container {
+    background-image: url(/img/attimo-dark.jpg)
+  }
+  
+  #container .card:nth-of-type(5) .image-container {
+    background-image: url(/img/logo-generica-dark.jpg)
+  }
+
+  .landing-pages img, .system-apps img, .sites img, .e-commerce img {
+    border-radius: 12px;
+    width: 60%;
+    transition: transform 0.3s ease;
+  }
+
+  body .sites img {
+    margin-bottom: -20px;
+    height: 60%;
+  }
+
+  body .sites h2 {
+    margin: 20px -30px;
+  }
+
+  /* body .landing-pages h2 {
+    margin: 20px -30px;
+  }
+
+  body .system-apps h2 {
+    margin-top: 30px;
+  }
+
+  body .apps-description {
+    margin-top: -20px;
+  }
+
+  body .e-commerce h2 {
+    margin-top: -30px;
+    margin-left: -25%;
+  }
+
+  body .apps-description {
+    margin-top: -20px;
+  } */
+
+  /* .landing-pages h2, .system-apps h2, .sites h2, .e-commerce h2, h2 */
+
 }
 
 /*  responsivo  */
@@ -1236,10 +1304,10 @@ footer span a:hover {
   }
   
   .landing-description, .apps-description, .sites-description, .e-commerce-description {
-    width: 400px;
+    width: 350px;
     font-size: 16px;
     margin-top: 16px;
-    margin-left: -35px;
+    margin-left: -18%;
     text-align: left;
   }
 
@@ -1634,7 +1702,3 @@ footer span a:hover {
   }
 
 }
-
-
-
-
